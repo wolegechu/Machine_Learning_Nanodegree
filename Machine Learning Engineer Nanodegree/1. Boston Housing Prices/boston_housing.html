@@ -11779,7 +11779,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11813,11 +11813,6 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Boston housing dataset has 489 data points with 4 variables each.
-RM              6.421
-LSTAT           9.140
-PTRATIO        17.800
-MEDV       453600.000
-Name: 1, dtype: float64
 </pre>
 </div>
 </div>
@@ -11856,7 +11851,7 @@ Name: 1, dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Minimum price of the data</span>
@@ -11872,7 +11867,7 @@ Name: 1, dtype: float64
 <span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Standard deviation of prices of the data</span>
-<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># Show the calculated statistics</span>
 <span class="k">print</span> <span class="s2">&quot;Statistics for Boston housing dataset:</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -11881,6 +11876,15 @@ Name: 1, dtype: float64
 <span class="k">print</span> <span class="s2">&quot;Mean price: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_price</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;Median price ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">median_price</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;Standard deviation of prices: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">std_price</span><span class="p">)</span>
+
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># plt.figure(figsize=(20, 5))</span>
+<span class="c1"># for i, col in enumerate(features.columns):</span>
+<span class="c1">#     plt.subplot(1, 3, i+1)</span>
+<span class="c1">#     plt.plot(data[col], prices, &#39;o&#39;)</span>
+<span class="c1">#     plt.title(col)</span>
+<span class="c1">#     plt.xlabel(col)</span>
+<span class="c1">#     plt.ylabel(&#39;prices&#39;)</span>
 </pre></div>
 
 </div>
@@ -11899,7 +11903,7 @@ Minimum price: $105,000.00
 Maximum price: $1,024,800.00
 Mean price: $454,342.94
 Median price $438,900.00
-Standard deviation of prices: $165,340.28
+Standard deviation of prices: $165,171.13
 </pre>
 </div>
 </div>
@@ -11930,7 +11934,8 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> An increase in the value of "RM" and "LSTAT" led to an increase in "MDEV";An increase in "PTRATIO" led to a decrease in "MDEV"</p>
+<p><strong>Answer: </strong> An increase in the value of "RM" led to an increase in "MDEV";An increase in "PTRATIO" and "LSTAT" led to a decrease in "MDEV".</p>
+<p>The more number of rooms would result in higher price,the greater neighborhood would cause the higher price,and the worse education would result in lower price.</p>
 
 </div>
 </div>
@@ -11964,7 +11969,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;r2_score&#39;</span>
@@ -12029,7 +12034,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Calculate the performance of this model</span>
@@ -12087,7 +12092,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;train_test_split&#39;</span>
@@ -12129,17 +12134,7 @@ Standard deviation of prices: $165,340.28
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> We use the training data to find appropriate paprameters and model.And then use the testing data to checking and optimize the performance of the model.</p>
-
-</div>
-</div>
-</div>
+</div>**Answer: **  We use the training data to train the model.And then we use the testing data to checking the performance of the model.It's important that two sets are independent from each other or result will be biased.
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13825,7 +13820,7 @@ RK5CYII=
 <p><strong>Answer: </strong> Max_depth = 3 is the best choice;</p>
 <p>The score of training curve is decreasing and becomes steady;</p>
 <p>The testing curve have a upward trend,especially between 0~50 Training Points,but then still have some vibrations;</p>
-<p>Yes,but the benefit is very slight.So it isn't necessary to find more training points.</p>
+<p>No,the testing curve has converged to its optimal score.So it isn't necessary to find more training points.</p>
 
 </div>
 </div>
@@ -14682,7 +14677,7 @@ xVKsRURERHSxFGsRERERXez/Acg1uTvYqP6fAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
@@ -14698,7 +14693,7 @@ xVKsRURERHSxFGsRERERXez/Acg1uTvYqP6fAAAAAElFTkSuQmCC
     <span class="n">cv_sets</span> <span class="o">=</span> <span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n_iter</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 
     <span class="c1"># TODO: Create a decision tree regressor object</span>
-    <span class="n">regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">()</span>
+    <span class="n">regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">66</span><span class="p">)</span>
 
     <span class="c1"># TODO: Create a dictionary for the parameter &#39;max_depth&#39; with a range from 1 to 10</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;max_depth&quot;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">)}</span>
@@ -14744,7 +14739,7 @@ xVKsRURERHSxFGsRERERXez/Acg1uTvYqP6fAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Fit the training data to the model using grid search</span>
@@ -14778,7 +14773,8 @@ xVKsRURERHSxFGsRERERXez/Acg1uTvYqP6fAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>4</p>
+<p><strong>Answer: </strong> 4
+It is same as my guess. The k-fold cross-validation is helpful to tune the parameters to the optimum value.</p>
 
 </div>
 </div>
@@ -14827,14 +14823,13 @@ xVKsRURERHSxFGsRERERXez/Acg1uTvYqP6fAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a matrix for client data</span>
 <span class="n">client_data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="c1"># Client 1</span>
                <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">22</span><span class="p">],</span> <span class="c1"># Client 2</span>
                <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]</span>  <span class="c1"># Client 3</span>
-
 <span class="c1"># Show predictions</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">client_data</span><span class="p">)):</span>
     <span class="k">print</span> <span class="s2">&quot;Predicted selling price for Client {}&#39;s home: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span>
@@ -14867,7 +14862,14 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> $391,183.33\$189,123.53\$942,666.67;</p>
-<p>Yes,its reasonabel.Because the predicted prices are within the range of maximum and minimun MEDV value,and the values of features seem also reasonabel compare with the values in provided data.</p>
+<p>Yes,its reasonabel.Because the predicted prices are within the range of maximum and minimun MEDV value,and the values of features is also with in the range of maxinmum and minimun of the features.</p>
+
+<pre><code>           RM       LSTAT     PTRATIO
+</code></pre>
+<p>min      3.561000    1.980000   12.600000
+mean     6.240288   12.939632   18.516564
+max      8.398000   37.970000   22.000000</p>
+<p>After notice the description by using "features.describe()",we can see the LASAT, RM and PTRATIO are generally within the range of maximum and minimun of the learning data set.Also the mean of these three houses approximate the caculated mean.</p>
 
 </div>
 </div>
@@ -14884,7 +14886,7 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">PredictTrials</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">fit_model</span><span class="p">,</span> <span class="n">client_data</span><span class="p">)</span>
@@ -14942,11 +14944,11 @@ Range in prices: $69,044.61
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> 1. Today may multiply by the data.</p>
+<p><strong>Answer: </strong> 1.The features is still relevant, but the importance of each feature may change a lot today.</p>
 <ol>
-<li>Yes,because the applied features are the major factor.</li>
-<li>No,the prices always fluctuate with the supply and demand information</li>
-<li>No,people in different region have different demand.</li>
+<li>The applied features are the major factor. However,there can be many more features, such as the size and the distance from the center of the city.</li>
+<li>No, the prices always fluctuate with the supply and demand information. So there is a variability in the predictions.</li>
+<li>No, people in different region have different demand.</li>
 </ol>
 
 </div>
