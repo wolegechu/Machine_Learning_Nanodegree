@@ -1,7 +1,5 @@
 # Machine Learning Engineer Nanodegree
 ![](cert.png)
-This repository contains all of my projects for Machine Learning Engineer Nanodegree Program. In this repository I apply some of machine learning techniques to solve the problems. here there is list of my projects:
-
 There are all of my projects for Machine Learning Engineer Nanodegree. To solve each of the programs, I applied some of machine learning techniques. Here there is list of my projects:
 
 ### Project 1: Predicting Boston Housing Prices
