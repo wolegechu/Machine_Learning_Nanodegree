@@ -15,6 +15,7 @@ There are all of my projects for Machine Learning Engineer Nanodegree. To solve 
 Primary File: [2. Finding Donors/finding_donors.ipynb](2.%20Finding%20Donors/finding_donors.ipynb)
 
 **Requirements for project 2**
+
 Using supervised learning to find donors for CharityML.
 
 * Decision Trees
@@ -29,6 +30,7 @@ Using supervised learning to find donors for CharityML.
 Primary File: [3. Customer Segments/customer_segments.ipynb](3.%20Customer%20Segments/customer_segments.ipynb)
 
 **Requirements for project 3**
+
 Using unsupervised learning to create customer segments.
 
 * Clustering
@@ -42,6 +44,7 @@ Using unsupervised learning to create customer segments.
 Primary File: 4. [Smartcab/smartcab.ipynb](4.%20Smartcab/smartcab.ipynb)
 
 **Requirements for project 4**
+
 Using reinforcement learning to train a smart cab how to drive.
 
 * Markov Decision Processes
