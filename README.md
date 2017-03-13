@@ -4,6 +4,7 @@ There are all of my projects for Machine Learning Engineer Nanodegree. To solve 
 
 ### Project 1: Predicting Boston Housing Prices
 **Primary File:** [1. Boston Housing Prices/boston_housing.ipynb](1.%20Boston%20Housing%20Prices/boston_housing.ipynb)
+
 **Requirements for project 1**
 
 * Evaluating Model Performance
@@ -12,6 +13,7 @@ There are all of my projects for Machine Learning Engineer Nanodegree. To solve 
 
 ### Project 2: Finding Donors for CharityML
 Primary File: [2. Finding Donors/finding_donors.ipynb](2.%20Finding%20Donors/finding_donors.ipynb)
+
 **Requirements for project 2**
 Using supervised learning to find donors for CharityML.
 
@@ -25,6 +27,7 @@ Using supervised learning to find donors for CharityML.
 
 ### Project 3: Creating Customer Segments
 Primary File: [3. Customer Segments/customer_segments.ipynb](3.%20Customer%20Segments/customer_segments.ipynb)
+
 **Requirements for project 3**
 Using unsupervised learning to create customer segments.
 
@@ -37,6 +40,7 @@ Using unsupervised learning to create customer segments.
 
 ### Project 4: Train a Smartcab to Drive
 Primary File: 4. [Smartcab/smartcab.ipynb](4.%20Smartcab/smartcab.ipynb)
+
 **Requirements for project 4**
 Using reinforcement learning to train a smart cab how to drive.
 
@@ -47,6 +51,7 @@ Using reinforcement learning to train a smart cab how to drive.
 
 ### Project 5: Build a Digit Recognition Program
 Primary File: [5. Digit Recognition/digit_recognition.ipynb](5.%20Digit%20Recognition/digit_recognition.ipynb)
+
 In this project, I used deep neural networks and convolutional neural networks to create a program that prints numbers it observes in real time from images it is given. 
 
 ### Capstone: Rossmann 销售额预测模型
